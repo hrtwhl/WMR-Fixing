@@ -13,8 +13,8 @@ This project downloads and compares intraday foreign exchange rates from LSEG/Re
 
 For each business day, the analysis compares:
 
-1. The traded TRB mid-price at 12:00 and 13:00 local time
-2. The corresponding WMR benchmark fixing at 12:00 and 13:00 local time
+1. The traded TRB mid-price at 10:00 and 11:00 UTC time
+2. The corresponding WMR benchmark fixing at 10:00 and 11:00 UTC time
 
 The objective is to measure how closely traded market prices align with the official WMR fixing rates and to identify systematic differences, outliers, or time-of-day effects.
 
@@ -33,8 +33,8 @@ TRB timestamps are retained as provided after confirming that they already repre
 
 The analyzed period is:
 
-- **Start date:** 2026-01-01
-- **End date:** 2026-08-13
+- **Start date:** 2025-08-14
+- **End date:** 2026-08-14
 
 ## Data Processing
 
