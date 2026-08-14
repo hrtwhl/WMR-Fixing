@@ -33,7 +33,7 @@ TRB timestamps are retained as provided after confirming that they already repre
 
 The analyzed period is:
 
-- **Start date:** 2026-05-13
+- **Start date:** 2026-01-01
 - **End date:** 2026-08-13
 
 ## Data Processing
@@ -60,9 +60,7 @@ For every currency pair and fixing hour, the project calculates:
 - Mean absolute error (MAE)
 - Root mean squared error (RMSE)
 - Median absolute error
-- 95th percentile absolute deviation
 - Maximum absolute deviation
-- Correlation between TRB and WMR rates
 - Share of observations within selected basis-point thresholds
 
 The analysis also compares results between the 12:00 and 13:00 fixing times.
@@ -77,13 +75,12 @@ The project includes charts for:
 - TRB rates plotted against WMR fixing rates
 - Daily deviation heatmaps
 - Identification of the largest outliers
-- Relationship between market movements and fixing deviations
 
 ## Main Files
 
 - `fx_mid_prices_12_13.csv`: TRB mid-prices at 12:00 and 13:00
 - `wmr_fixings_12_13.csv`: WMR fixing values at 12:00 and 13:00
-- Analysis notebook or Python script containing the data preparation, metrics, and visualizations
+- `analysis.ipynb`: Analysis notebook containing the data preparation, metrics, and visualizations
 
 ## Requirements
 
