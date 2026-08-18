@@ -78,7 +78,7 @@ The project includes charts for:
 - `analysis_majors.ipynb`: Analysis notebook containing the data preparation, metrics, and visualizations for major currencies
 - `analysis_exotics.ipynb`: Analysis notebook containing the data preparation, metrics, and visualizations for exotic currencies
 
-All relevant tables and charts are exported to their respecive folders `tables_majors`/`tables_exotics` and `charts_majors.csv` / `charts_exotics.csv`
+All relevant tables and charts are exported to their respecive folders `tables_majors`/`tables_exotics` and `charts_majors` / `charts_exotics`
 
 ## Requirements
 
