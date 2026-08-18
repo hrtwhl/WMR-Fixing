@@ -2,14 +2,8 @@
 
 ## Project Overview
 
-This project downloads and compares intraday foreign exchange rates from LSEG/Refinitiv for six EUR currency pairs:
+This project downloads and compares intraday foreign exchange rates from LSEG/Refinitiv for eighteen major and 19 exotic currency pairs listed on the [Website of ERSTE Group](https://www.sparkasse.at/investments-en/markets/market-overview/currencies):
 
-- EUR/USD
-- EUR/CHF
-- EUR/JPY
-- EUR/GBP
-- EUR/CZK
-- EUR/HUF
 
 For each business day, the analysis compares:
 
@@ -29,11 +23,9 @@ Two instrument groups and fields are used:
 
 The WMR timestamps returned by the API are interpreted as UTC and converted to `Europe/Vienna` local time. During the analyzed summer period, this converts 10:00 UTC and 11:00 UTC into 12:00 and 13:00 CEST.
 
-TRB timestamps are retained as provided after confirming that they already represent the required local observation times.
-
 The analyzed period is:
 
-- **Start date:** 2025-08-14
+- **Start date:** 2025-08-19
 - **End date:** 2026-08-14
 
 ## Data Processing
@@ -78,9 +70,15 @@ The project includes charts for:
 
 ## Main Files
 
-- `fx_mid_prices_12_13.csv`: TRB mid-prices at 12:00 and 13:00
-- `wmr_fixings_12_13.csv`: WMR fixing values at 12:00 and 13:00
-- `analysis.ipynb`: Analysis notebook containing the data preparation, metrics, and visualizations
+- `fx_mid_prices_majors.csv`: TRB mid-prices at 12:00 and 13:00 for major currencies
+- `fx_mid_prices_exotics.csv`: TRB mid-prices at 12:00 and 13:00 for exotic currencies
+- `wmr_fixings_majors.csv`: WMR fixing values at 12:00 and 13:00 for major currencies
+- `wmr_fixings_exotics.csv`: WMR fixing values at 12:00 and 13:00 for exotic currencies
+
+- `analysis_majors.ipynb`: Analysis notebook containing the data preparation, metrics, and visualizations for major currencies
+- `analysis_exotics.ipynb`: Analysis notebook containing the data preparation, metrics, and visualizations for exotic currencies
+
+All relevant tables and charts are exported to their respecive folders `tables_majors`/`tables_exotics` and `charts_majors.csv` / `charts_exotics.csv`
 
 ## Requirements
 
