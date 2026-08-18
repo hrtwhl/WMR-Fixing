@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project downloads and compares intraday foreign exchange rates from LSEG/Refinitiv for eighteen major and 19 exotic currency pairs listed on the [Website of ERSTE Group](https://www.sparkasse.at/investments-en/markets/market-overview/currencies):
+This project downloads and compares intraday foreign exchange rates from LSEG/Refinitiv for eighteen major and 19 exotic currency pairs listed on the [Website of ERSTE Group](https://www.sparkasse.at/investments-en/markets/market-overview/currencies).
 
 
 For each business day, the analysis compares:
