@@ -1,0 +1,1 @@
+Please go through the attached jupyter notebooks analysis_exotics and analysis_majors. I also provided the data files those two scripts load: fx_mid_prices_exotics.csv, fx_mid_prices_majors.csv, wmr_fixings_exotics and wmr
